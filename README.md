@@ -61,26 +61,37 @@ Note that the sequence file should be in FASTA format.
 
 Examples (in the "test" folder):
 
-    Align the first sequence in oneseq.fa to all sequences in the 10seq.fa
+Align the first sequence in oneseq.fa to all sequences in the 10seq.fa
 
-    `../my_needle oneseq.fa 10seq.fa`
+    $ ../my_needle oneseq.fa 10seq.fa
 
-    Align a large number of pairs of sequences by supplying sequence database and pairs of seqids
+Align a large number of pairs of sequences by supplying sequence database and pairs of seqids
 
-    `../my_needle -list PF00008.pairlist -mode 1 -seqdb PF00008.fa -m 1 -o outfile.txt`
+    $ ../my_needle -list PF00008.pairlist -mode 1 -seqdb PF00008.fa -m 1 -o outfile.txt
 
 
-    All to all pairwise alignment given a file with multiple sequences
+All to all pairwise alignment given a file with multiple sequences
 
-    `../my_needle t2.fa -mode 2 -m 1 -table table1.txt`
+    $ ../my_needle t2.fa -mode 2 -m 1 -table table1.txt
 
 
 ##INSTALLATION
-    `$ make `
+    First get the software by 
 
-For making the debug version
+        $ git clone https://github.com/nanjiangshu/my_needle
 
-    `$ make debug`
+    Then change to the directly my_needle by
+
+        $ cd my_needle
+
+    Then compile the software by running (note that you need gcc in order to
+    compile the software)
+
+        $ make 
+
+    For making the debug version, type
+
+        $ make debug
 
 
 #Format of the input file
@@ -96,7 +107,7 @@ Gap penalties can be set under the sequence and enclosed in {}. A tag
 can be set directly after the left bracket {. If no tag is set, the default is the gap open array.
 A leading '#' will comment out the gap penalty array.
 
-Example:
+An example of input file with supplied gap open penalties:
 
 <pre>
 >seq1
@@ -106,3 +117,8 @@ ASNLSKLFLSDSDA
 {#tgpe: 40 44 44 43 44 45 46 47 48 49 40 44 44 43 }
 </pre>
 
+
+##Contact
+Nanjiang Shu
+Science for Life Laboratory, Stockholm
+Email: nanjiang.shu@scilifelab.se
