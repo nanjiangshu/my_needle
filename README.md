@@ -75,23 +75,23 @@ All to all pairwise alignment given a file with multiple sequences
     $ ../my_needle t2.fa -mode 2 -m 1 -table table1.txt
 
 
-##INSTALLATION
-    First get the software by 
+##Installation
+First get the software by 
 
-        $ git clone https://github.com/nanjiangshu/my_needle
+    $ git clone https://github.com/nanjiangshu/my_needle
 
-    Then change to the directly my_needle by
+Then change to the directory "my_needle" by
 
-        $ cd my_needle
+    $ cd my_needle
 
-    Then compile the software by running (note that you need gcc in order to
-    compile the software)
+Then compile the software by running (note that you need gcc in order to
+compile the software)
 
-        $ make 
+    $ make 
 
-    For making the debug version, type
+For making the debug version, type
 
-        $ make debug
+    $ make debug
 
 
 #Format of the input file
@@ -120,5 +120,7 @@ ASNLSKLFLSDSDA
 
 ##Contact
 Nanjiang Shu
+
 Science for Life Laboratory, Stockholm
+
 Email: nanjiang.shu@scilifelab.se
