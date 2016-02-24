@@ -1,0 +1,218 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+AA_SEQ	my_needle.cpp	111;"	d	file:
+ALPHABET_BLOSUM	my_needle.cpp	/^const char ALPHABET_BLOSUM[]="ARNDCQEGHILKMFPSTWYVBZX*";$/;"	v
+ALPHABET_NUC	my_needle.cpp	/^const char ALPHABET_NUC[]="ATGCSWRYKMBVHDN";$/;"	v
+ALPHABET_SHAG	my_needle.cpp	/^const char ALPHABET_SHAG[]="AKRSUVTGHBC-";$/;"	v
+AjBool	my_needle.cpp	/^typedef ajint AjBool;$/;"	t	file:
+AlignAllPair	my_needle.cpp	/^int AlignAllPair (vector<Pair> &pairList, map <string, dbindex> &dbindexmap,vector<FILE*>& fpList, map <string, string>&idseqmap, int dbfilesize, float ** SM, FILE *fpout, FILE *fpLog , FILE *fpTable)\/*{{{*\/$/;"	f
+AlignAna	my_needle.cpp	/^void AlignAna(const char *alignX,const char* alignY, const char *alphabet, int length, float **subMatr, AlignFactor* pAlignFactor, int* alignRel)\/*{{{*\/$/;"	f
+AlignFactor	my_needle.cpp	/^struct AlignFactor\/*{{{*\/$/;"	s	file:
+AlignTwoSeqFile	my_needle.cpp	/^int AlignTwoSeqFile(string &file1, string &file2, string &title1, string &title2, float ** SM, FILE *fpout, FILE* fpLog, FILE* fpTable)\/*{{{*\/$/;"	f
+Alignment_MyNeedle	my_needle.cpp	/^int Alignment_MyNeedle(const char *p, const char *q, const char *alphabet, int lena, int lenb, const char *title1, const char *title2, char *alnP,char *alnQ,int *alignRel, AlignFactor &alignFactor, float gapopen, float gapextend, float endgapopen, float endgapextend, float **sub, int seq_type, FILE *fpLog)\/*{{{*\/$/;"	f
+Alignment_MyNeedle2	my_needle.cpp	/^int Alignment_MyNeedle2(const char *p, const char *q, const char *alphabet, int lena, int lenb, const char *title1, const char *title2, char *alnP,char *alnQ,int *alignRel, AlignFactor &alignFactor, float *gapopenArray1, float *gapopenArray2, float gapextend, float endgapopen, float endgapextend, float **sub, int seq_type  , FILE *fpLog)\/*{{{*\/$/;"	f
+Array1D	array.h	/^template <class T>  class Array1D \/\/ can be accessed both by .array1D and []$/;"	c
+Array1D	array.h	/^template <class T> Array1D<T>::Array1D(unsigned int size)\/*{{{*\/$/;"	f	class:Array1D
+Array1Dto2D	my_needle.cpp	/^template <class T> void Array1Dto2D(T *array1d, T ** array2d, int m, int n)\/*{{{*\/$/;"	f
+Array2D	array.h	/^template <class T> Array2D<T>::Array2D(unsigned int rowSize, unsigned int colSize)$/;"	f	class:Array2D
+Array2D	array.h	/^template <class T> class Array2D \/\/accessed by .array2D$/;"	c
+Array2D_Sub	array.h	/^	Array2D_Sub(unsigned int rowSize,unsigned int colSize)$/;"	f	class:Array2D_Sub
+Array2D_Sub	array.h	/^template <class T> class Array2D_Sub \/\/ can be accessed by [][]$/;"	c
+Array3D	array.h	/^template <class T> Array3D<T>::Array3D(unsigned int xSize, unsigned int ySize, unsigned int zSize)\/*{{{*\/$/;"	f	class:Array3D
+Array3D	array.h	/^template <class T> class Array3D \/\/accessed by .array3D$/;"	c
+BYTE	my_needle.cpp	/^typedef unsigned char BYTE;$/;"	t	file:
+CHAR_GAP	my_needle.cpp	134;"	d	file:
+CHAR_GAP	my_needle.cpp	135;"	d	file:
+CalKMerVectorScore	my_needle.cpp	/^float CalKMerVectorScore(map <string, int> &wordCountMap1, map <string, int> &wordCountMap2){\/*{{{*\/$/;"	f
+CalKMerVectorScore_norm	my_needle.cpp	/^float CalKMerVectorScore_norm(map <string, int> &wordCountMap1, map <string, int> &wordCountMap2){\/*{{{*\/$/;"	f
+CalKMerVectorScore_norm_c	my_needle.cpp	/^float CalKMerVectorScore_norm_c(map <char*, int, cmp_str> &wordCountMap1, map <char*, int, cmp_str> &wordCountMap2){\/*{{{*\/$/;"	f
+CalKMerVectorScore_norm_table	my_needle.cpp	/^float CalKMerVectorScore_norm_table(int * freqTable1, int* freqTable2, set <int> indexWordHit1, set <int> indexWordHit2){\/*{{{*\/$/;"	f
+CalKMerVectorScore_old1	my_needle.cpp	/^float CalKMerVectorScore_old1(map <string, int> &wordCountMap1, map <string, int> &wordCountMap2){\/*{{{*\/$/;"	f
+Char2Digit	my_needle.cpp	/^int Char2Digit(char aa, const char* alphabet, int n = 0)\/*{{{*\/$/;"	f
+Charcase2Digit	my_needle.cpp	/^int Charcase2Digit(char aa, const char* alphabet, int n \/*= 0*\/)\/*{{{*\/$/;"	f
+CountKMerOfSequence	my_needle.cpp	/^int CountKMerOfSequence(string &seq, map <string, int> &wordCountMap, int wordsize){\/*{{{*\/$/;"	f
+CountKMerOfSequence_c	my_needle.cpp	/^int CountKMerOfSequence_c(const char* seq, map <char*, int, cmp_str> &wordCountMap, int wordsize){\/*{{{*\/$/;"	f
+CountKMerOfSequence_table	my_needle.cpp	/^int CountKMerOfSequence_table(const char*seq, int len, int* freqTable, set <int>&indexWordHit, int wordsize){\/*{{{*\/$/;"	f
+Create2DArray	array.h	/^template <class T> T **Create2DArray(T **array, unsigned int xSize, unsigned int ySize)\/*{{{*\/$/;"	f
+Create3DArray	array.h	/^template <class T> T*** Create3DArray(T ***array, unsigned int xSize, unsigned int ySize, unsigned int zSize)\/*{{{*\/$/;"	f
+DIAG	my_needle.cpp	127;"	d	file:
+DIAG	my_needle.cpp	130;"	d	file:
+DNA_SEQ	my_needle.cpp	110;"	d	file:
+DOWN	my_needle.cpp	129;"	d	file:
+DOWN	my_needle.cpp	132;"	d	file:
+DebugPrintPathMatrix2	my_needle.cpp	/^void DebugPrintPathMatrix2(const char *header, float ** V, char *Xstr,char *Ystr,int m,int n,int **compass, FILE *fplog)\/*{{{*\/$/;"	f
+Delete2DArray	array.h	/^template <class T> void Delete2DArray(T **array, unsigned int xSize)\/*{{{*\/$/;"	f
+Delete3DArray	array.h	/^template <class T> void Delete3DArray(T ***array, unsigned int xSize, unsigned int ySize)\/*{{{*\/$/;"	f
+E_FPEQ	my_needle.cpp	137;"	d	file:
+FreeMem_WrodMap_c	my_needle.cpp	/^void FreeMem_WrodMap_c(map <char*, int, cmp_str> &wordCountMap){\/*{{{*\/$/;"	f
+GAP	my_needle.cpp	97;"	d	file:
+GenerateRandomSelection	my_needle.cpp	/^int GenerateRandomSelection(int &i, int &j, int sizeI, int sizeJ, set<string>&selectedSet)\/*{{{*\/$/;"	f
+GenerateSequentialSelection	my_needle.cpp	/^int GenerateSequentialSelection(int &i, int &j, int sizeI, int sizeJ)\/*{{{*\/$/;"	f
+GetAASeqFromDatabase	my_needle.cpp	/^int GetAASeqFromDatabase(string &id, string &aaSeq, map<string, dbindex>&dbindexmap, vector<FILE*> fpList)\/*{{{*\/$/;"	f
+GetAASeqFromDatabase2	my_needle.cpp	/^int GetAASeqFromDatabase2(string &aaSeq, map<string, dbindex>:: iterator itDBIndexMap, vector<FILE*> fpList)\/*{{{*\/$/;"	f
+GetColSize	array.h	/^	unsigned int GetColSize(void)    {return this->colSize; }$/;"	f	class:Array2D_Sub
+GetColSize	array.h	/^template <class T>  unsigned int Array2D<T>::GetColSize(void) { return  colSize;} $/;"	f	class:Array2D
+GetDBFPList	my_needle.cpp	/^int GetDBFPList( vector <FILE*> &fpList, string dbname, int maxdbfileindex)\/*{{{*\/$/;"	f
+GetFastaSeqFromBuffer	my_needle.cpp	/^int GetFastaSeqFromBuffer(char* buffer, vector <string> &idList, vector <string> &seqList, int &seq_type)\/*{{{*\/$/;"	f
+GetFileSize	my_needle.cpp	/^int GetFileSize(const char *name)\/*{{{*\/$/;"	f
+GetIDFromAnnotationLine	my_needle.cpp	/^string GetIDFromAnnotationLine(char *line, string &id)\/*{{{*\/$/;"	f
+GetIDSeqMap	my_needle.cpp	/^int GetIDSeqMap(map <string, dbindex> &dbindexmap,vector <FILE*>&fpList, map <string,string> &idseqmap)\/*{{{*\/$/;"	f
+GetMinimalSeqIdentity	my_needle.cpp	/^float GetMinimalSeqIdentity(vector <int> &cntSeqIDTClass, int *maxSeqIDTClass, float* binSeqIDTClass, int numSeqIDTClass){\/*{{{*\/$/;"	f
+GetRowSize	array.h	/^	unsigned int GetRowSize(void)	{return this->rowSize; }$/;"	f	class:Array2D_Sub
+GetRowSize	array.h	/^template <class T>  unsigned int Array2D<T>::GetRowSize(void) { return  rowSize;} $/;"	f	class:Array2D
+GetSeqFromBuffer	my_needle.cpp	/^int GetSeqFromBuffer(char*buffer, string &aaSeq)\/*{{{*\/$/;"	f
+GetSeqIDTClass	my_needle.cpp	/^int GetSeqIDTClass(float seqIdentity, float* binSeqIDTClass, int numSeqIDTClass){\/*{{{*\/$/;"	f
+GetSize	array.h	/^template <class T> unsigned int Array1D<T>::GetSize(void)  { return  size;} $/;"	f	class:Array1D
+GetSubstitutionMatrix	my_needle.cpp	/^int GetSubstitutionMatrix(string &file, float **SM, char * alphabet, int alnType)\/*{{{*\/$/;"	f
+GetThresholdKMerScore	my_needle.cpp	/^float GetThresholdKMerScore(float minimalSeqIdentity){\/*{{{*\/$/;"	f
+GetXSize	array.h	/^template <class T>  unsigned int Array3D<T>::GetXSize(void) { return  xSize;} $/;"	f	class:Array3D
+GetYSize	array.h	/^template <class T>  unsigned int Array3D<T>::GetYSize(void) { return  ySize;} $/;"	f	class:Array3D
+GetZSize	array.h	/^template <class T>  unsigned int Array3D<T>::GetZSize(void) { return  zSize;} $/;"	f	class:Array3D
+HAS_ARRAY_H	array.h	17;"	d
+IDT	my_needle.cpp	94;"	d	file:
+Init	array.h	/^template <class T>  void Array2D<T>::Init(T initValue) \/*{{{*\/$/;"	f	class:Array2D
+Init	array.h	/^template <class T>  void Array3D<T>::Init(T initValue) \/*{{{*\/$/;"	f	class:Array3D
+Init	array.h	/^template <class T> void Array1D<T>::Init(T initValue) \/*{{{*\/$/;"	f	class:Array1D
+InitAlignFactor	my_needle.cpp	/^void InitAlignFactor(AlignFactor *pAlignFactor)\/*{{{*\/$/;"	f
+IsAllGroupFilled	my_needle.cpp	/^bool IsAllGroupFilled(vector <int> &cntSeqIDTClass)\/*{{{*\/$/;"	f
+IsFileExist	my_needle.cpp	/^bool IsFileExist(const char *name)\/*{{{*\/$/;"	f
+IsInCharSet	my_needle.cpp	/^bool IsInCharSet(const char ch, const char *charSet, int n \/*= 0 *\/)\/*{{{*\/$/;"	f
+KMerVectorPairwiseComparison	my_needle.cpp	/^float KMerVectorPairwiseComparison(string& seq1, string& seq2, string& seqID1, string& seqID2, int wordsize, FILE *fpLog){\/*{{{*\/$/;"	f
+KMerVectorPairwiseComparison_c	my_needle.cpp	/^float KMerVectorPairwiseComparison_c(string& seq1, string& seq2, string& seqID1, string& seqID2, int wordsize, FILE *fpLog){\/*{{{*\/$/;"	f
+KMerVectorPairwiseComparison_table	my_needle.cpp	/^float KMerVectorPairwiseComparison_table(string& seq1, string& seq2, string& seqID1, string& seqID2, int* freqTable1, int *freqTable2, int sizeTable, int wordsize, FILE *fpLog){\/*{{{*\/$/;"	f
+LEFT	my_needle.cpp	128;"	d	file:
+LEFT	my_needle.cpp	131;"	d	file:
+LONGEST_SEQ	my_needle.cpp	/^int LONGEST_SEQ=10000;$/;"	v
+LONGEST_SEQ	my_needle.cpp	142;"	d	file:
+MAX_ALIGN_SIZE	my_needle.cpp	/^int MAX_ALIGN_SIZE=1024;  \/*1024 MB*\/$/;"	v
+MIS	my_needle.cpp	96;"	d	file:
+NUM_BLOSUM	my_needle.cpp	203;"	d	file:
+NUM_NUC	my_needle.cpp	204;"	d	file:
+NUM_SHAG	my_needle.cpp	205;"	d	file:
+Pair	my_needle.cpp	/^struct Pair{\/*{{{*\/$/;"	s	file:
+PrintHelp	my_needle.cpp	/^void PrintHelp() {$/;"	f
+PrintKMerVectorPair	my_needle.cpp	/^void PrintKMerVectorPair(map <string, int> &wordCountMap1, map <string, int>& wordCountMap2, string &id1, string&id2, FILE *fpout) {\/*{{{*\/$/;"	f
+PrintKMerVectorPair_c	my_needle.cpp	/^void PrintKMerVectorPair_c(map <char*, int, cmp_str> &wordCountMap1, map <char*, int, cmp_str>& wordCountMap2, const char* id1, const char* id2, FILE *fpout) {\/*{{{*\/$/;"	f
+READ_FILE_ERROR	my_needle.cpp	101;"	d	file:
+ReadDatabaseIndex	my_needle.cpp	/^int ReadDatabaseIndex(string &dbname, map<string,dbindex>&dbindexmap, int &maxDBIndexNumber)\/*{{{*\/$/;"	f
+ReadDatabaseIndex_binary	my_needle.cpp	/^int ReadDatabaseIndex_binary(string &indexfile, map<string, dbindex> &dbindexmap,int &maxdbfileindex )\/*{{{*\/$/;"	f
+ReadDatabaseIndex_text	my_needle.cpp	/^int ReadDatabaseIndex_text(string &indexfile, map<string, dbindex> &dbindexmap,int &maxdbfileindex )\/*{{{*\/$/;"	f
+ReadFasta	my_needle.cpp	/^int ReadFasta(string &file,  vector <string> &idList, vector <string> &seqList, int &seq_type)\/*{{{*\/$/;"	f
+ReadInPairList	my_needle.cpp	/^int ReadInPairList(const char* file, vector <Pair>&pairList)\/*{{{*\/$/;"	f
+ReadNextGapOpenArray	my_needle.cpp	/^int ReadNextGapOpenArray(FILE *fp, float *gapopenArray)\/*{{{*\/$/;"	f
+ReadNextSeq_FASTA	my_needle.cpp	/^int ReadNextSeq_FASTA(FILE *fp, char* seq, float *gapopenArray, float *gpeArray, float *tgpeArray, bool &isHasGapOpenArray, int *pSeq_type \/*= NULL*\/, int maxlength \/*= LONGEST_SEQ*\/, char* annotationLine\/*=NULL*\/, int maxSizeAnnotationLine \/*=50*\/)\/*{{{*\/$/;"	f
+ReadSMatrix	my_needle.cpp	/^template <class T> int ReadSMatrix(const char *filename, T **S, char *alphabet)\/*{{{*\/$/;"	f
+ReadSeq_FASTA	my_needle.cpp	/^int ReadSeq_FASTA(const char *fileName, char* seq, float *gapopenArray, float * gpeArray, float*tgpeArray, bool &isHasGapOpenArray, int *pSeq_type \/*= NULL*\/, int maxlength \/*= LONGEST_SEQ*\/, char* annotationLine\/*=NULL*\/, int maxSizeAnnotationLine \/*=50*\/)\/*{{{*\/$/;"	f
+Row	array.h	/^		Row(Array2D_Sub& _array2D,unsigned int _row):$/;"	f	class:Array2D_Sub::Row
+Row	array.h	/^	class Row$/;"	c	class:Array2D_Sub
+SEQALIGN	my_needle.cpp	92;"	d	file:
+SEQ_TYPE	my_needle.cpp	109;"	d	file:
+SHAPE_SEQ	my_needle.cpp	112;"	d	file:
+SIM	my_needle.cpp	95;"	d	file:
+SIZE_TITLE	my_needle.cpp	139;"	d	file:
+SIZE_TITLE	my_needle.cpp	140;"	d	file:
+Select	array.h	/^	T& Select(unsigned int row, unsigned int col)$/;"	f	class:Array2D_Sub
+SpanExcluding	my_needle.cpp	/^char *SpanExcluding(const char* strForSpan,char* strAfterSpan, const char charSet[]\/*=WHITE_SPACE*\/)\/*{{{*\/$/;"	f
+StrReverse	my_needle.cpp	/^char * StrReverse(char *str)\/*{{{*\/$/;"	f
+THRESHOLD_DB_FILESIZE	my_needle.cpp	/^int THRESHOLD_DB_FILESIZE = 0; \/*0 MB*\/$/;"	v
+UNKNOWN_SEQ_TYPE	my_needle.cpp	113;"	d	file:
+U_DEPS	my_needle.cpp	125;"	d	file:
+U_FEPS	my_needle.cpp	124;"	d	file:
+WHITE_SPACE	my_needle.cpp	88;"	d	file:
+WRITE_FILE_ERROR	my_needle.cpp	102;"	d	file:
+WriteAlignmentHeaderNeedle	my_needle.cpp	/^void WriteAlignmentHeaderNeedle(float gapOpen, float gapExt, int iAlign, AlignFactor *alignFactor, const char *title1, const char *title2, int seqLength1, int seqLength2, FILE *fpout)\/*{{{*\/$/;"	f
+WriteAlignmentInFasta	my_needle.cpp	/^void WriteAlignmentInFasta(string &title1, string &title2, char *alignstr, float gapopen, float gapextend, int iAlign, int seqLength, AlignFactor *pAlignFactor, FILE *fpout)\/*{{{*\/$/;"	f
+WriteAlignmentNeedle	my_needle.cpp	/^void WriteAlignmentNeedle(const char *title1, const char *title2, char *aXstr, char *aYstr, int *aRel, int length,int lineLength, FILE *fpout)\/*{{{*\/$/;"	f
+WriteAlignmentTableLine	my_needle.cpp	/^void WriteAlignmentTableLine(string &title1, string &title2, int iAlign, int seqLength1, int seqLength2, AlignFactor &alignFactor, FILE*fpout)\/*{{{*\/$/;"	f
+aacode	my_needle.cpp	/^const int aacode[]=$/;"	v
+ajFalse	my_needle.cpp	121;"	d	file:
+ajTrue	my_needle.cpp	122;"	d	file:
+ajint	my_needle.cpp	/^typedef int ajint;$/;"	t	file:
+ajuint	my_needle.cpp	/^typedef unsigned int ajuint;$/;"	t	file:
+alnType	my_needle.cpp	/^int alnType                 = AA_SEQ;$/;"	v
+alphabet	my_needle.cpp	/^char alphabet[500]          = "";$/;"	v
+array	array.h	/^	T* array;$/;"	m	class:Array2D_Sub
+array1D	array.h	/^        T* array1D; \/\/ can also accessed by array1D directory, quicker$/;"	m	class:Array1D
+array2D	array.h	/^		Array2D_Sub& array2D;$/;"	m	class:Array2D_Sub::Row
+array2D	array.h	/^        T** array2D;$/;"	m	class:Array2D
+array3D	array.h	/^        T*** array3D;$/;"	m	class:Array3D
+binSeqIDTClass	my_needle.cpp	/^float binSeqIDTClass[] = {$/;"	v
+blosum62	my_needle.cpp	/^const int blosum62[][NUM_BLOSUM] =\/*{{{*\/$/;"	v
+checkfilestream	my_needle.cpp	/^int checkfilestream(FILE *fp, const char* filename, const char *mode, bool isAssert =false)\/*{{{*\/$/;"	f
+cmp_str	my_needle.cpp	/^struct cmp_str\/*{{{*\/$/;"	s	file:
+colSize	array.h	/^	unsigned int colSize;$/;"	m	class:Array2D_Sub
+colSize	array.h	/^        unsigned int colSize;$/;"	m	class:Array2D
+dbfileindex	my_needle.cpp	/^    int dbfileindex;$/;"	m	struct:dbindex	file:
+dbindex	my_needle.cpp	/^struct dbindex{\/*{{{*\/$/;"	s	file:
+eValue	my_needle.cpp	/^	double eValue;$/;"	m	struct:AlignFactor	file:
+embAlignGetScoreNWMatrix	my_needle.cpp	/^static float embAlignGetScoreNWMatrix(\/*{{{*\/$/;"	f	file:
+embAlignPathCalcWithEndGapPenalties	my_needle.cpp	/^float embAlignPathCalcWithEndGapPenalties(const char *a, const char *b,\/*{{{*\/$/;"	f
+embAlignPathCalcWithEndGapPenalties2	my_needle.cpp	/^float embAlignPathCalcWithEndGapPenalties2(const char *a, const char *b,\/*{{{*\/$/;"	f
+embAlignWalkNWMatrixUsingCompass	my_needle.cpp	/^int embAlignWalkNWMatrixUsingCompass(const char* p, const char* q,\/*{{{*\/$/;"	f
+endgapextend	my_needle.cpp	/^float endgapextend = 10.0;$/;"	v
+endgapopen	my_needle.cpp	/^float endgapopen = 10.0;$/;"	v
+endweight	my_needle.cpp	/^AjBool endweight            = false;$/;"	v
+explanation_table_format	my_needle.cpp	/^char explanation_table_format[]="\\$/;"	v
+fgetline	my_needle.cpp	/^int fgetline(FILE* fp, char* line, int max\/* = 0x7FFFFFFF*\/)\/*{{{*\/$/;"	f
+gapPercent	my_needle.cpp	/^	float gapPercent;$/;"	m	struct:AlignFactor	file:
+gap_cnt	my_needle.cpp	/^	int   gap_cnt;$/;"	m	struct:AlignFactor	file:
+gapextend	my_needle.cpp	/^float gapextend = 0.5;$/;"	v
+gapopen	my_needle.cpp	/^float gapopen = 10.0;$/;"	v
+identity	my_needle.cpp	/^	float identity;$/;"	m	struct:AlignFactor	file:
+identity_short	my_needle.cpp	/^	float identity_short;$/;"	m	struct:AlignFactor	file:
+idt_cnt	my_needle.cpp	/^	int   idt_cnt;$/;"	m	struct:AlignFactor	file:
+int2string	my_needle.cpp	/^string int2string(int number)\/*{{{*\/$/;"	f
+int8	my_needle.cpp	/^typedef signed char int8;$/;"	t	file:
+isCheckSeqIDTClass	my_needle.cpp	/^bool isCheckSeqIDTClass = true;$/;"	v
+isPrintTraceMatrix	my_needle.cpp	/^bool isPrintTraceMatrix     = false;$/;"	v
+isRandSelection	my_needle.cpp	/^bool isRandSelection = true;$/;"	v
+isShowProgress	my_needle.cpp	/^bool isShowProgress = true;$/;"	v
+main	my_needle.cpp	/^int main(int argc, char *argv[])\/*{{{*\/$/;"	f
+matrixFile	my_needle.cpp	/^string  matrixFile = "";$/;"	v
+maxSeqIDTClass	my_needle.cpp	/^int maxSeqIDTClass[]={$/;"	v
+mem1	my_needle.cpp	/^    string mem1;$/;"	m	struct:Pair	file:
+mem2	my_needle.cpp	/^    string mem2;$/;"	m	struct:Pair	file:
+method_select_pair	my_needle.cpp	/^int  method_select_pair = 1;$/;"	v
+my_strcpy	my_needle.cpp	/^int my_strcpy(char* to, const char* from, int max, int sizefrom = 0)\/*{{{*\/$/;"	f
+nchar	my_needle.cpp	/^int   nchar = 50; \/*maximum length of sequence to print at each line*\/$/;"	v
+noGapOpenArray	my_needle.cpp	/^bool noGapOpenArray         = false;$/;"	v
+nuc44	my_needle.cpp	/^const int nuc44[][NUM_NUC] =\/*{{{*\/$/;"	v
+numSeqIDTClass	my_needle.cpp	/^int numSeqIDTClass = sizeof(maxSeqIDTClass)\/sizeof(int);$/;"	v
+offset	my_needle.cpp	/^    long offset;$/;"	m	struct:dbindex	file:
+operator ()	my_needle.cpp	/^   bool operator()(char const *a, char const *b)$/;"	f	struct:cmp_str
+operator []	array.h	/^		T& operator [] (unsigned int col) const$/;"	f	class:Array2D_Sub::Row
+operator []	array.h	/^	Row operator [] (unsigned int row) {return Row(*this,row);}$/;"	f	class:Array2D_Sub
+operator []	array.h	/^template <class T> T& Array1D<T>::operator [] (unsigned int i) { return array1D[i]; }$/;"	f	class:Array1D
+outformat	my_needle.cpp	/^int outformat = 0; \/*set by the -m option $/;"	v
+pairlistmode	my_needle.cpp	/^int pairlistmode=0;\/*set by the -mode option$/;"	v
+para20	my_needle.cpp	/^const int para20[]={$/;"	v
+pozScore	my_needle.cpp	/^	float pozScore;$/;"	m	struct:AlignFactor	file:
+printPathMatrix	my_needle.cpp	/^static void printPathMatrix(const float* path, const ajint* compass,\/*{{{*\/$/;"	f	file:
+rootname	my_needle.cpp	/^char *rootname(const char* filename, char* rtname, int max_rtname )\/*{{{*\/$/;"	f
+row	array.h	/^		unsigned int const row;$/;"	m	class:Array2D_Sub::Row
+rowSize	array.h	/^	unsigned int rowSize;$/;"	m	class:Array2D_Sub
+rowSize	array.h	/^        unsigned int rowSize;$/;"	m	class:Array2D
+score	my_needle.cpp	/^	float score;$/;"	m	struct:AlignFactor	file:
+seq_type	my_needle.cpp	/^int   seq_type = AA_SEQ; \/* sequence type, default is amino acid sequence*\/$/;"	v
+shag6	my_needle.cpp	/^const int shag6[][NUM_SHAG] =\/*{{{*\/$/;"	v
+show	my_needle.cpp	/^bool show                   = false;$/;"	v
+sim_cnt	my_needle.cpp	/^	int   sim_cnt;$/;"	m	struct:AlignFactor	file:
+similarity	my_needle.cpp	/^	float similarity;$/;"	m	struct:AlignFactor	file:
+similarity_short	my_needle.cpp	/^	float similarity_short;$/;"	m	struct:AlignFactor	file:
+size	array.h	/^        unsigned int size;$/;"	m	class:Array1D
+size	my_needle.cpp	/^    unsigned long size;$/;"	m	struct:dbindex	file:
+sizeAlphabet	my_needle.cpp	/^int  sizeAlphabet           = 0;$/;"	v
+usage	my_needle.cpp	/^char usage[]\/*{{{*\/="\\n\\$/;"	v
+wordsize	my_needle.cpp	/^int wordsize = 3;$/;"	v
+xSize	array.h	/^        unsigned int xSize;$/;"	m	class:Array3D
+ySize	array.h	/^        unsigned int ySize;$/;"	m	class:Array3D
+zScore	my_needle.cpp	/^	float zScore;$/;"	m	struct:AlignFactor	file:
+zSize	array.h	/^        unsigned int zSize;$/;"	m	class:Array3D
+~Array1D	array.h	/^template <class T> Array1D<T>::~Array1D(void) \/*{{{*\/$/;"	f	class:Array1D
+~Array2D	array.h	/^template <class T> Array2D<T>::~Array2D(void)\/*{{{*\/$/;"	f	class:Array2D
+~Array2D_Sub	array.h	/^	~Array2D_Sub()$/;"	f	class:Array2D_Sub
+~Array3D	array.h	/^template <class T> Array3D<T>::~Array3D(void)\/*{{{*\/$/;"	f	class:Array3D

@@ -1,0 +1,58 @@
+LOG: 2011-10-20 14:06:00 Thursday  Week 42 <nanjiang@illergard>
+    New function added. In case of very many pair-wise alignments, e.g. 10
+    millions from a large sequence database, e.g. uniprot, it is unfeasible to
+    wirte to millions files of each contains one sequence. Therefore,
+    sequence ids are supplied in the pair-list file instead of sequence file
+    name and an indexed fasta db file are supplied for quick accessment of
+    sequences without read the whole content (can be over 4GB) to memory.
+
+    usage of the new function 
+    -m output format
+    0: the raw alignment
+    1: tab delimited table format of alignment statistical information 
+    my_needle -seqdb indexedfastadb -l pair-list-file  -m 1 
+
+LOG: 2011-10-26 21:12:29 Wednesday  Week 43 <nanjiang@illergard>
+	the tab delimited table is output by another flag -table
+    -talbe FILE 
+    -m output format is modified
+    -m   INT    Output alignment format, (default: 0)
+                0: full pairwise alignment in EMBOSS needle format
+                1: full pairwise alignment in Fasta format
+    -mode 2 is added 
+                2: do all-to-all pairwise alignment given a fasta file
+                    with multiple sequences
+
+LOG: 2011-10-27 10:14:20 Thursday  Week 43 <nanjiang@illergard>
+	small change 
+    when writing the progress, write the newline \n or endl will flush the
+    buffer, otherwise, force flushing
+    when copy the buffer to a string by specifying the size, using my_strcpy
+    my_strcpy(seq, buffer, sizeseq)
+    The old version is very slow when the size of buffer is huge (e.g. >100MB)
+    since the old version of my_strcpy will call strlen(buffer) every time. 
+    I have deleted this line in the new version of my_strlen()
+LOG: 2011-10-31 14:20:59 Monday  Week 44 <nanjiang@illergard>
+	Add selected pair for every randomly generated pair may cause memory
+    overflow when the number of comparisons are large, e.g. 200000 x 200000  
+    This has been fixed by adding the selected pair only for actually output
+    pair.
+    selectedSet.insert(selectedpair);/*added selected pair when only it actually output*/
+LOG: 2011-11-01 23:26:46 Tuesday  Week 44 <nanjiang@illergard>
+	KMerVectorPairwiseComparison_table rewritten, using vector instead of set.  
+    using vector sort(), unique() instead of set container speed up the
+    program a lot.
+    Now KMerVectorPairwiseComparison_table is about 83 times faster than
+    needle alignment.
+    
+    One bug fixed for binSeqIDTClass. 10.0 not 10,0
+
+LOG: 2012-05-30 23:09:30 Wednesday  Week 22 <nanjiang@illergard>
+	one bug fixed for when aligning sequences with characters not in the
+    alphabet, e.g. for uniprot seq "UniRef90_Q9C0D9" 
+    This bug is fixed by changes functions "Char2Digit" and "Charcase2Digit"
+    when char is not found in alphabet, return (n-1) instead of -1
+    where n is the size of the alphabet, assuming that the last char of the
+    alphabet is for unknown characters
+LOG: 2014-08-27 14:48:23 Wednesday  Week 34 <nanjiang@shu>
+	LONGEST_SEQ assigned to 80000 instead of 10000  
