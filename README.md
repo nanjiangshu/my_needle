@@ -7,9 +7,9 @@ In addition, it allows pairwise alignment of a large number of sequences.
 The software is developed in C/C++.
 
 ##Usage:
-    my_needle [options] seqfile1 seqfile2
+my_needle [options] seqfile1 seqfile2
 
-    OPTIONS:
+OPTIONS:
 <pre>
       -list    FILE    Supply the pair list, one line a pair
       -mode     INT    Pair mode, (default: 0)
