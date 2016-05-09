@@ -7,6 +7,7 @@ In addition, it allows pairwise alignment of a large number of sequences.
 The software is developed in C/C++.
 
 ##Usage:
+```
 my_needle [options] seqfile1 seqfile2
 
 OPTIONS:
@@ -59,7 +60,9 @@ OPTIONS:
 
 Note that the sequence file should be in FASTA format.
 
-Examples (in the "test" folder):
+```
+
+##Examples (in the "test" folder):
 
 Align the first sequence in oneseq.fa to all sequences in the 10seq.fa
 
@@ -94,9 +97,9 @@ For making the debug version, type
     $ make debug
 
 
-#Format of the input file
+##Format of the input file
 
-<b>Enhanced Fasta format</b>
+###Enhanced Fasta format
 
 Gap penalties can be set under the sequence and enclosed in {}. A tag
 
@@ -109,13 +112,13 @@ A leading '#' will comment out the gap penalty array.
 
 An example of input file with supplied gap open penalties:
 
-<pre>
+```
 >seq1
 ASNLSKLFLSDSDA
 {gpo: 10 -1000 10 10 10 10 10 10 10 10 10 10 10 10 }
 {#gpe: 20 -1000 -10000 23 24 25 26 27 28 29 20 22 22 23 }
 {#tgpe: 40 44 44 43 44 45 46 47 48 49 40 44 44 43 }
-</pre>
+```
 
 
 ##Contact
