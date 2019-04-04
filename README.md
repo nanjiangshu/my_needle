@@ -9,7 +9,9 @@ The software is developed in C/C++.
 ## Author
 
 Nanjiang Shu
+
 Senior researcher at SciLifeLab Stockholm
+
 nanjiang.shu@scilifelab.se
 
 ## Usage:
