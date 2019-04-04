@@ -1,12 +1,18 @@
-#my_needle
+# my_needle
 
-##Description:
+## Description:
 Global pairwise sequence alignment derived from the needle program in the EMBOSS package
 Gapopens can be supplied under the sequence and enclosed in { }.
 In addition, it allows pairwise alignment of a large number of sequences.
 The software is developed in C/C++.
 
-##Usage:
+## Author
+
+Nanjiang Shu
+Senior researcher at SciLifeLab Stockholm
+nanjiang.shu@scilifelab.se
+
+## Usage:
 ```
 my_needle [options] seqfile1 seqfile2
 
@@ -62,7 +68,7 @@ Note that the sequence file should be in FASTA format.
 
 ```
 
-##Examples (in the "test" folder):
+## Examples (in the "test" folder):
 
 Align the first sequence in oneseq.fa to all sequences in the 10seq.fa
 
@@ -78,7 +84,7 @@ All to all pairwise alignment given a file with multiple sequences
     $ ../my_needle t2.fa -mode 2 -m 1 -table table1.txt
 
 
-##Installation
+## Installation
 First get the software by 
 
     $ git clone https://github.com/nanjiangshu/my_needle
@@ -97,9 +103,9 @@ For making the debug version, type
     $ make debug
 
 
-##Format of the input file
+## Format of the input file
 
-###Enhanced Fasta format
+### Enhanced Fasta format
 
 Gap penalties can be set under the sequence and enclosed in {}. A tag
 
@@ -121,9 +127,5 @@ ASNLSKLFLSDSDA
 ```
 
 
-##Contact
-Nanjiang Shu
-
-Science for Life Laboratory, Stockholm
-
+## Contact
 Email: nanjiang.shu@scilifelab.se
